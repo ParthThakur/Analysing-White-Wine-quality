@@ -21,7 +21,7 @@ library(psych)
 ```{r echo=FALSE, Load_the_Data}
 
 # Loading the dataset "wineQualityWhites.csv" into a variable "df".
-df <- read.csv("wineQualityWhites.csv")
+df <- read.csv("datasets/wineQualityWhites.csv")
 df$X <- NULL 
 # The variable X is the index number of the observations which is not required 
 # for my analysis. Hence I removed it.
