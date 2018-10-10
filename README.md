@@ -6,7 +6,31 @@ In this Project, I explore a dataset containing information on over 4000 White W
 
 To view the entire report, download [`white_wine_analysis.html`](https://raw.githubusercontent.com/ParthThakur/Analysing-White-Wine-quality/master/white_wine_analysis.html) and open it using a web browser.
 
-The [white wine analysis.rmd`](https://github.com/ParthThakur/Analysing-White-Wine-quality/blob/master/white%20wine%20analysis.rmd) documents the entire process of exploration. To run this file, and render the report locally you need RStudio. The dataset used can be found [here](https://github.com/ParthThakur/Analysing-White-Wine-quality/blob/master/wineQualityWhites.csv)
+The [`white wine analysis.rmd`](https://github.com/ParthThakur/Analysing-White-Wine-quality/blob/master/white%20wine%20analysis.rmd) documents the entire process of exploration. To run this file, and render the report locally you need RStudio. 
+
+The dataset used can be found [here](https://github.com/ParthThakur/Analysing-White-Wine-quality/blob/master/wineQualityWhites.csv). It contains 12 variables as described below:
+
+```
+Input variables (based on physicochemical tests):
+
+    1. fixed acidity (tartaric acid - g / dm^3)
+    2. volatile acidity (acetic acid - g / dm^3)
+    3. citric acid (g / dm^3)
+    4. residual sugar (g / dm^3)
+    5. chlorides (sodium chloride - g / dm^3
+    6. free sulfur dioxide (mg / dm^3)
+    7. total sulfur dioxide (mg / dm^3)
+    8. density (g / cm^3)
+    9. pH
+    10. sulphates (potassium sulphate - g / dm3)
+    11. alcohol (% by volume) 
+
+Output variable (based on sensory data): 
+
+	1. quality (score between 0 and 10)
+```
+
+Detailed definitions and description of the dataset can be found in (datasets/description.txt)
 
 ### Built With
 
@@ -16,7 +40,7 @@ The [white wine analysis.rmd`](https://github.com/ParthThakur/Analysing-White-Wi
 
 ### Key insights from the Report
 
-![plot_1](img\plot_1.png)
+![plot_1](img/plot_1.png)
 
 This plot represents a key finding in my report. That quality of the white wine is significantly correlated to its density and its alcohol content. These were the two of the strongest correlations to the quality. Density at -0.31 and alcohol at 0.44. 
 
@@ -24,7 +48,7 @@ In the box plot at the top, the downward trend in the density of the wine tells 
 
 This dip makes me believe that there is a certain threshold for alcohol percent before it starts to have a positive impact on quality. In fact, I am certain, that if alcohol content keeps on rising, quality will start to dip again as higher concentrations of alcohol impart a bitter taste to wines. 
 
-![plot_2](img\plot_2.png)
+![plot_2](img/plot_2.png)
 
 In this plot, I see the relationship between the three most significant variables. Specifically, the relationship between density and alcohol, and residual sugar. I split the sugar values in two to better visualize the data. Wines with residual sugar less than 3g/dm<sup>3</sup> are “Low sugar”, and those with more than that are “High sugar”. 
 
@@ -32,7 +56,7 @@ These three variables show the highest amount of correlation. As alcohol content
 
 This relationship also helps us understand the age of the wine. The older the wine, the longer it is fermented, which gives it a high alcohol content and a lower density. Hence I can also say that older wines are of better quality. 
 
-![plot_3](img\plot_3.png)
+![plot_3](img/plot_3.png)
 
 This plot shows the relationship between all our important variables. I have facet wrapped the plot based on the quality of the wine, and added some jitter to the scatter plot to make it easier to visualize the date.
 
